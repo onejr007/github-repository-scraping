@@ -7,4 +7,5 @@ Created using:
 - JQUERY 3
 
 Github pages only allow static pages, which means html files work, but not PHP. So please download and run it on localhost or on your webhosting.
+
 Try this : http://bagas-drawing-app.html-5.me/
