@@ -219,6 +219,5 @@ figure {
 }
 
 #example {
-	min-width: calc(100vw - 10px);
-	width: calc(100vw - 10px);
+	width: 100%;
 }
