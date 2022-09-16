@@ -5,3 +5,5 @@ Created using:
 - Boostrap 3
 - Boostrap DataTable
 - JQUERY 3
+
+Github pages only allow static pages, which means html files work, but not PHP. So please download and run it on localhost or on your own webhosting.
