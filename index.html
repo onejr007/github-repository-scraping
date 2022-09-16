@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>SCRAPPING YOUR GITHUB</title>
+</head>
+<body>
+    <header class="text-center">
+    	<h1>Github Repository Scraping</h1>
+    </header> 
+    <div class="container_read">
+        <div class='search-form_read'>
+            <input type="text" class="search-bar_read" id="search" placeholder="username" />
+            <div class='search-btn_read'>
+                <button type='submit' id="btnSubmit">
+                <i class="fa fa-search search_read"></i>
+                </button>
+            </div>
+        </div>
+        <div class='box'>
+            <p class="discription_read">
+                Copy the Github username and paste it into the search box or use my github username <span class='click_read'>
+                click here
+                </span> .
+            </p>
+            <div class="loader_read hide_read"></div>
+            <div class="error_read hide_read">
+                <p class="text">Username Not Found or Username Not Have Repository Public</p>
+            </div>
+            <div class='center-wrapper_read hide_read'>
+                <table id="example" class="display table-bordered table" style="width: 100%">
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>REPOSITORY</th>
+                        </tr>
+                     </thead>
+                    <tbody id="tbody">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </body>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <p>&copy; Copyright <script>document.write(new Date().getFullYear());</script>. Create by<span><a href="https://www.linkedin.com/in/bagas-adi-pratama-59a5a2168/"> Bagas Adi Pratama</a></span>.</p>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+<script src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
+<script src="./index.js" type="text/javascript"></script>
+</body>
+</html>
